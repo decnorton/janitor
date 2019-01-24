@@ -1,6 +1,8 @@
 # janitor
 
-An action for GitHub Actions that commits and pushes local changes back to current branch on GitHub. Used for, e.g. keeping TOC up-to-date or clean up code formatting.
+An action for GitHub Actions that commits and pushes local changes back to
+current branch on GitHub. Used for, e.g. keeping TOC up-to-date or clean up code
+formatting.
 
 <!-- toc -->
 
@@ -13,11 +15,18 @@ An action for GitHub Actions that commits and pushes local changes back to curre
 
 ## Motivation
 
-Using tooling to keep your files properly formatted can sometimes be annoying, as it’s no longer practical to use GitHub’s web-based editor to edit the file without the tool complaining about your format.
+Using tooling to keep your files properly formatted can sometimes be annoying,
+as it’s no longer practical to use GitHub’s web-based editor to edit the file
+without the tool complaining about your format.
 
-Enter `janitor`. You can make a mess and Janitor will clean it up, and push the changes back to GitHub.
+Enter `janitor`. You can make a mess and Janitor will clean it up, and push the
+changes back to GitHub.
 
-For example, in this repository, `janitor` is used to [format the source code](https://github.com/dtinth/janitor/commit/4c881512129d3f29d1a35560a8421e1348f41e6a#diff-7a9076d6d94e62c13d641aa71f19ae8e) (using [Prettier](https://github.com/prettier/prettier)) and [update the README file’s TOC](https://github.com/dtinth/janitor/commit/63a26384fdd301ccff6adb928a4fd0064c3c5251) (using [markdown-toc](https://github.com/jonschlinkert/markdown-toc)).
+For example, in this repository, `janitor` is used to
+[format the source code](https://github.com/dtinth/janitor/commit/4c881512129d3f29d1a35560a8421e1348f41e6a#diff-7a9076d6d94e62c13d641aa71f19ae8e)
+(using [Prettier](https://github.com/prettier/prettier)) and
+[update the README file’s TOC](https://github.com/dtinth/janitor/commit/63a26384fdd301ccff6adb928a4fd0064c3c5251)
+(using [markdown-toc](https://github.com/jonschlinkert/markdown-toc)).
 
 ## Usage
 
@@ -29,8 +38,10 @@ Commits the changed files to the local repository.
 
 - A commit message is **required**.
 - New files are not committed. Only updated files are committed.
-- The commit is not pushed to GitHub repository. To do that, use the `push` action.
-- By default, the committee is attributed to @ghost. To change, you can override these environment variables: `EMAIL`, `GIT_COMMITTER_NAME`, `GIT_AUTHOR_NAME`.
+- The commit is not pushed to GitHub repository. To do that, use the `push`
+  action.
+- By default, the committee is attributed to @ghost. To change, you can override
+  these environment variables: `EMAIL`, `GIT_COMMITTER_NAME`, `GIT_AUTHOR_NAME`.
 - If working directory is clean, a commit will not be created.
 
 ```
