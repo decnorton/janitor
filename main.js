@@ -7,7 +7,7 @@ switch (command) {
     if (!commitMessage) {
       throw `Please provide a descriptive commit message!`
     }
-    spawnSync('git', ['commit', '-a', '-F-'], { input: commitMessage, stdio:'inherit' })
+    spawnSync('git', ['commit', '-a', '-F', '-'], { input: commitMessage, stdio:'inherit' })
     break
   case 'push':
     if (!process.env.GITHUB_TOKEN) {
