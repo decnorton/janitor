@@ -21,12 +21,13 @@ For example, in this repository, `janitor` is used to format the source code (us
 
 ## Usage
 
-### `args = "commit <Message>"`
+### `args = "commit (Commit message)"`
 
 Commits the changed files to the local repository.
 
 **Notes:**
 
+- A commit message is **required**.
 - New files are not committed. Only updated files are committed.
 - The commit is not pushed to GitHub repository. To do that, use the `push` action.
 - By default, the committee is attributed to @ghost. To change, you can override these environment variables: `EMAIL`, `GIT_COMMITTER_NAME`, `GIT_AUTHOR_NAME`.
