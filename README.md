@@ -15,13 +15,14 @@ formatting.
 
 ## Motivation
 
-Using tooling to keep your files properly formatted can sometimes be annoying,
-— it’s no longer practical to use GitHub’s web-based editor to edit the file
-without the tool complaining about your code formatting.
-This is especially true when you use, e.g. Prettier, to make sure your Markdown files are neatly formatted.
+Using tooling to keep your files properly formatted can sometimes be annoying, —
+it’s no longer practical to use GitHub’s web-based editor to edit the file
+without the tool complaining about your code formatting. This is especially true
+when you use, e.g. Prettier, to make sure your Markdown files are neatly
+formatted.
 
-Enter `janitor`. You can make a mess and `janitor` will clean it up, and push the
-changes back to GitHub.
+Enter `janitor`. You can make a mess and `janitor` will clean it up, and push
+the changes back to GitHub.
 
 For example, in this repository, `janitor` is used to
 [format the source code](https://github.com/dtinth/janitor/commit/4c881512129d3f29d1a35560a8421e1348f41e6a#diff-7a9076d6d94e62c13d641aa71f19ae8e)
