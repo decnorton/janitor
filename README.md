@@ -16,10 +16,11 @@ formatting.
 ## Motivation
 
 Using tooling to keep your files properly formatted can sometimes be annoying,
-as it’s no longer practical to use GitHub’s web-based editor to edit the file
-without the tool complaining about your format.
+— it’s no longer practical to use GitHub’s web-based editor to edit the file
+without the tool complaining about your code formatting.
+This is especially true when you use, e.g. Prettier, to make sure your Markdown files are neatly formatted.
 
-Enter `janitor`. You can make a mess and Janitor will clean it up, and push the
+Enter `janitor`. You can make a mess and `janitor` will clean it up, and push the
 changes back to GitHub.
 
 For example, in this repository, `janitor` is used to
