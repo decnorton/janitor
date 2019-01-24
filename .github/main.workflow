@@ -5,6 +5,12 @@ workflow "Janitor" {
   ]
 }
 
+action "markdown-toc" {
+  uses = "actions/npm@de7a3705a9510ee12702e124482fad6af249991b"
+  runs = "npx"
+  args = "markdown-toc -i README.md"
+}
+
 action "Prettier" {
   uses = "actions/npm@de7a3705a9510ee12702e124482fad6af249991b"
   needs = [
@@ -27,9 +33,4 @@ action "Push" {
   needs = ["Commit"]
   args = "push"
   secrets = ["GITHUB_TOKEN"]
-}
-
-action "markdown-toc" {
-  uses = "actions/npm@de7a3705a9510ee12702e124482fad6af249991b"
-  runs = "npx"
 }
