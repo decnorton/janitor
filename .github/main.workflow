@@ -1,17 +1,24 @@
 workflow "Janitor" {
   on = "push"
-  resolves = ["Push"]
+  resolves = [
+    "Push"
+  ]
 }
 
 action "Prettier" {
   uses = "actions/npm@de7a3705a9510ee12702e124482fad6af249991b"
+  needs = [
+    "markdown-toc"
+  ]
   runs = "npx"
   args = "prettier --write **/*.{js,md,json}"
 }
 
 action "Commit" {
   uses = "./"
-  needs = ["Prettier"]
+  needs = [
+    "Prettier"
+  ]
   args = "commit Prettify code"
 }
 
@@ -20,4 +27,9 @@ action "Push" {
   needs = ["Commit"]
   args = "push"
   secrets = ["GITHUB_TOKEN"]
+}
+
+action "markdown-toc" {
+  uses = "actions/npm@de7a3705a9510ee12702e124482fad6af249991b"
+  runs = "npx"
 }
