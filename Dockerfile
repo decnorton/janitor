@@ -10,7 +10,7 @@ ENV GIT_AUTHOR_NAME=Janitor
 ENV GIT_AUTHOR_EMAIL=ghost@users.noreply.github.com
 
 COPY package.json package-lock.json /usr/src/app/
-RUN ["npm", "ci"]
+RUN cd /usr/src/app/ && npm ci
 COPY . /usr/src/app/
 
 ENTRYPOINT ["node", "/usr/src/app/main.js"]
