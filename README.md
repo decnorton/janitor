@@ -11,7 +11,7 @@ An action for GitHub Actions that commits and pushes local changes back to curre
 
 <!-- tocstop -->
 
-## Problems
+## Motivation
 
 Using tooling to keep your files properly formatted can sometimes be annoying, as it’s no longer practical to use GitHub’s web-based editor to edit the file without the tool complaining about your format.
 
