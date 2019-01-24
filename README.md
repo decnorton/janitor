@@ -1,6 +1,6 @@
 # janitor
 
-GitHub actions to keep your repository clean.
+An action for GitHub Actions that commits and pushes local changes back to current branch on GitHub. Used for, e.g. keeping TOC up-to-date or clean up code formatting.
 
 <!-- toc -->
 
@@ -17,7 +17,7 @@ Using tooling to keep your files properly formatted can sometimes be annoying, a
 
 Enter `janitor`. You can make a mess and Janitor will clean it up, and push the changes back to GitHub.
 
-For example, in this repository, `janitor` is used to format the source code (using [Prettier](https://github.com/prettier/prettier)) and update the README file’s TOC (using [markdown-toc])(https://github.com/jonschlinkert/markdown-toc).
+For example, in this repository, `janitor` is used to format the source code (using [Prettier](https://github.com/prettier/prettier)) and update the README file’s TOC (using [markdown-toc](https://github.com/jonschlinkert/markdown-toc)).
 
 ## Usage
 
