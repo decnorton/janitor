@@ -4,6 +4,11 @@ GitHub actions to keep your repository clean.
 
 <!-- toc -->
 
+- [Problems](#problems)
+- [Usage](#usage)
+  - [`args = "commit "`](#args--commit-)
+  - [`args = "push"`](#args--push)
+
 <!-- tocstop -->
 
 ## Problems
@@ -51,4 +56,3 @@ action "Push" {
   secrets = ["GITHUB_TOKEN"]
 }
 ```
-
