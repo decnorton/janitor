@@ -6,8 +6,9 @@ LABEL "com.github.actions.description"="Pushes changes back to GitHub"
 LABEL "com.github.actions.icon"="git-commit"
 LABEL "com.github.actions.color"="blue"
 
+ENV GIT_COMMITTER_NAME=Janitor
 ENV GIT_AUTHOR_NAME=Janitor
-ENV GIT_AUTHOR_EMAIL=ghost@users.noreply.github.com
+ENV EMAIL=ghost@users.noreply.github.com
 
 COPY package.json package-lock.json /usr/src/app/
 RUN cd /usr/src/app/ && npm ci
