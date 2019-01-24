@@ -17,7 +17,7 @@ Using tooling to keep your files properly formatted can sometimes be annoying, a
 
 Enter `janitor`. You can make a mess and Janitor will clean it up, and push the changes back to GitHub.
 
-For example, in this repository, `janitor` is used to format the source code (using [Prettier](https://github.com/prettier/prettier)) and update the README file’s TOC (using [markdown-toc](https://github.com/jonschlinkert/markdown-toc)).
+For example, in this repository, `janitor` is used to [format the source code](https://github.com/dtinth/janitor/commit/4c881512129d3f29d1a35560a8421e1348f41e6a#diff-7a9076d6d94e62c13d641aa71f19ae8e) (using [Prettier](https://github.com/prettier/prettier)) and [update the README file’s TOC](https://github.com/dtinth/janitor/commit/63a26384fdd301ccff6adb928a4fd0064c3c5251) (using [markdown-toc](https://github.com/jonschlinkert/markdown-toc)).
 
 ## Usage
 
