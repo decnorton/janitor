@@ -8,7 +8,7 @@ LABEL "com.github.actions.color"="blue"
 
 ENV GIT_COMMITTER_NAME=Janitor
 ENV GIT_AUTHOR_NAME=Janitor
-ENV EMAIL=ghost@users.noreply.github.com
+ENV EMAIL=repository-janitor[bot]@users.noreply.github.com
 
 COPY package.json package-lock.json /usr/src/app/
 RUN cd /usr/src/app/ && npm ci
