@@ -7,8 +7,6 @@ switch (command) {
     if (!commitMessage) {
       throw `Please provide a descriptive commit message!`
     }
-    execSync("git config --global user.name 'Janitor'")
-    execSync("git config --global user.email 'ghost@users.noreply.github.com'")
     spawnSync('git', ['commit', '-a', '-F-'], { input: commitMessage })
     break
   case 'push':
