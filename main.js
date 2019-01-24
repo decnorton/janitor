@@ -7,13 +7,13 @@ switch (command) {
     if (!commitMessage) {
       throw `Please provide a descriptive commit message!`
     }
-    spawnSync('git', ['commit', '-a', '-F-'], { input: commitMessage })
+    spawnSync('git', ['commit', '-a', '-F-'], { input: commitMessage, stdio:'inherit' })
     break
   case 'push':
     if (!process.env.GITHUB_TOKEN) {
       throw `Maybe you forgot to enable the GITHUB_TOKEN secret?`
     }
-    execSync('git push origin $(git rev-parse --abbrev-ref HEAD)')
+    execSync('git push origin $(git rev-parse --abbrev-ref HEAD)',{stdio:'inherit'})
     break
   default:
     throw `Expected a valid command (commit/push).`
