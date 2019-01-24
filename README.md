@@ -4,9 +4,9 @@ An action for GitHub Actions that commits and pushes local changes back to curre
 
 <!-- toc -->
 
-- [Problems](#problems)
+- [Motivation](#motivation)
 - [Usage](#usage)
-  - [`args = "commit "`](#args--commit-)
+  - [`args = "commit (Commit message)"`](#args--commit-commit-message)
   - [`args = "push"`](#args--push)
 
 <!-- tocstop -->
