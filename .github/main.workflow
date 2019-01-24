@@ -3,7 +3,7 @@ workflow "Janitor" {
   resolves = ["Push"]
 }
 
-action "GitHub Action for npm" {
+action "Prettier" {
   uses = "actions/npm@de7a3705a9510ee12702e124482fad6af249991b"
   runs = "npx"
   args = "prettier --write **/*.{js,md,json}"
@@ -11,7 +11,7 @@ action "GitHub Action for npm" {
 
 action "Commit" {
   uses = "./"
-  needs = ["GitHub Action for npm"]
+  needs = ["Prettier"]
   args = "commit Prettify code"
 }
 
